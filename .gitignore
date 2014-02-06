@@ -7,3 +7,6 @@ libgloglotto.a
 
 examples/*
 !examples/*.cpp
+
+tests/*
+!tests/*.cpp
