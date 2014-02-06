@@ -65,7 +65,7 @@ namespace gloglotto
 				return *this;
 			}
 
-			if (++_current >= _object->size()) {
+			if (++_current >= (int) _object->size()) {
 				_current = -1;
 			}
 
