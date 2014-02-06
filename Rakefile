@@ -12,7 +12,7 @@ OBJECTS = SOURCES.ext('o')
 EXAMPLES = FileList['examples/*.cpp']
 TESTS    = FileList['tests/*.cpp']
 
-CLEAN.include(OBJECTS.existing).include(EXAMPLES.ext('o').existing).include(TESTS.ext('o').existing)
+CLEAN.include(OBJECTS.existing).include(EXAMPLES.ext('').existing).include(TESTS.ext('').existing)
 CLOBBER.include('libgloglotto.so', 'libgloglotto-static.a')
 
 task :default => ['libgloglotto.so', 'libgloglotto-static.a']
