@@ -36,7 +36,7 @@ namespace gloglotto
 					typedef iterator::accessible<vectors<Size, Vector>::sub<SliceSize>, Vector&>       iterator;
 
 					typedef typename Vector::type type;
-					static constexpr int bytes = Vector::size * SliceSize;
+					static constexpr int bytes = Vector::bytes * SliceSize;
 
 					static constexpr int elements = Vector::elements;
 
@@ -91,7 +91,7 @@ namespace gloglotto
 			typedef iterator::accessible<vectors<Size, Vector>, Vector&>       iterator;
 
 			typedef typename Vector::type type;
-			static constexpr int bytes = Vector::size * Size;
+			static constexpr int bytes = Vector::bytes * Size;
 
 			static constexpr int elements = Vector::elements;
 

@@ -226,6 +226,13 @@ namespace gloglotto
 		return *this;
 	}
 
+	template <int Size, typename Vector>
+	size_t
+	vectors<Size, Vector>::size (void) const
+	{
+		return Size;
+	}
+
 	template <int Size, class Vector>
 	Vector const&
 	vectors<Size, Vector>::operator [] (size_t index) const throw (std::out_of_range)
