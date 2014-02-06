@@ -4,6 +4,9 @@
 int
 main (int argc, char* argv[])
 {
+	(void) argc;
+	(void) argv;
+
 	return amirite("angle", {
 		{ "degrees", []{
 			auto value = gl::angle::degrees::make(60);

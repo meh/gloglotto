@@ -4,6 +4,9 @@
 int
 main (int argc, char* argv[])
 {
+	(void) argc;
+	(void) argv;
+
 	return amirite("matrix", {
 		{ "creation", []{
 			{
@@ -262,6 +265,18 @@ main (int argc, char* argv[])
 				amiequal(c[2][0], 60);
 				amiequal(c[2][1], 50);
 			}
+		}},
+
+		{ "!", []{
+			gl::mat3 a(1);
+			
+			!a;
+		}},
+
+		{ "~", []{
+			gl::mat3x2 a(1);
+
+			~a;
 		}},
 
 		{ "foreach", []{
