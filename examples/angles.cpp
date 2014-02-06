@@ -7,6 +7,9 @@ using namespace gloglotto::angle_operators;
 int
 main (int argc, char* argv[])
 {
+	(void) argc;
+	(void) argv;
+
 	std::cout << "10 hours in degrees: " <<
 		angle_cast<angle::degrees>(10_hours) << std::endl;
 

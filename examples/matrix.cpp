@@ -6,6 +6,9 @@ using namespace gloglotto;
 int
 main (int argc, char* argv[])
 {
+	(void) argc;
+	(void) argv;
+
 	matrix<2, 2> a = {{1, 2}, {2, 1}};
 	matrix<2, 2> b = {{3, 4}, {4, 3}};
 	vector<2>    c = {5, 5};
